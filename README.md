@@ -1,4 +1,5 @@
-Hi, I'm Gunes, this account is mainly interested in applications
-of Transformer and Diffusion Models to a wide range of fields.
+Hi, I'm Gunes. My interest lies in the intersection of neuroscience and recent progress in computational
+methods in AI. The repositories here will be, probably, in either one of, or the combination of these
+domains.
 
-Hop in!
+Contact me if you have any doubts abouts or questions!
