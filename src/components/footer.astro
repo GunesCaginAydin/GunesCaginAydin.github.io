@@ -1,0 +1,17 @@
+---
+import FooterLink from "./links.astro";
+const today = new Date();
+---
+
+<footer>
+	&copy; {today.getFullYear()} Gunes Cagin Aydin, this is an ongoing project, code is available on <FooterLink href="https://github.com/GunesCaginAydin">Github</FooterLink>.
+</footer>
+<style>
+	footer {
+		text-align: left;
+		margin: 0em 0em 2em 4em;
+	}
+	footer a {
+		color: black;
+	}
+</style>

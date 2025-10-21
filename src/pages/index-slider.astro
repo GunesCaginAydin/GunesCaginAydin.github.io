@@ -1,0 +1,189 @@
+---
+import BaseLayout from '../layouts/base-layout.astro';
+
+---
+
+<BaseLayout title="Home Page">
+
+	<div class="home-page">
+		<div class="text">
+			<h4>Hello Surfers</h4>
+			<p>I'm a mechanical engineer by trade who's currently invested in computational neuroscience. 
+				I did my Bachelors in METU (Ankara, Turkey) focusing on system dynamics and control where I
+				worked closely with Erhan Ilhan Konukseven. I then concluded my Masters in PoliMi (Milan, Italy) 
+				centered around learning theory and dynamical identification through the supervisions of
+				Loris Roveda and Francesco Braghin. Currently I'm working with Antoni Guillamon at UPC (Barcelona, 
+				Spain) on single neuron dynamical identification.
+			</p>
+			<p>
+				I am spending 2025/2026 with a few internships before starting my doctorate in 2026 Fall. Currently
+				in Barcelona, next stop Paris!
+			</p>
+			<p>
+				For a comprehensive exposition of my research check <a href="/research">CV</a> or just
+				go to <a href="/research">CV</a>. If you have any question or want to collaborate on neuroscience 
+				research <a href="/research">send me a mail</a>.
+			</p>
+		</div>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+			    <img src="src/assets/moon.jpg" alt="Moon sliding away from focus" class="moon">
+            </div>
+
+            <div class="mySlides fade">
+			    <img src="src/assets/pper.jpg" alt="Moon sliding away from focus" class="moon">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+	</div>
+
+</BaseLayout>
+
+<style>
+    * {box-sizing:border-box}
+    
+	.home-page {
+		display: flex;
+		flex-direction: row;
+		margin: 2em 2em 2em 4em;
+		padding: 0em 0em 0em 0em;
+	}
+	.text {
+		text-align: right;
+		margin: 0em 6em 0em 0em;
+	}
+	.images {
+		display: flex;
+		flex-direction: column;
+		margin: 2em 2em 2em 2em;
+		padding: 0em 0em 0em 0em;
+		gap: 1em;
+	}
+	.moon {
+		max-width: 100%;
+		height: auto;
+		border-radius: 5px;
+		margin: 0em 2em 0em 0em;
+	}
+	.pp {
+		max-width: 50%;
+		height: auto;
+		border-radius: 5px;
+		margin: 0em 2em 0em 0em;
+	}
+
+    .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    }
+
+    .mySlides {
+    display: none;
+    }
+
+    .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    }
+
+    .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    }
+
+    .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+    background-color: #717171;
+    }
+
+    .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+    }
+
+	@media screen and (max-width : 1000px) {
+		.home-page{
+			display: block;
+		}
+		.text {
+			text-align: center;
+		}
+		.images {
+
+		}
+		.moon {
+
+		}
+		.pp {
+			
+		}
+	}
+</style>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n: number) {
+    showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n: number) {
+    showSlides(slideIndex = n);
+    }
+
+    function showSlides(n: number) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        (slides[i] as HTMLElement).style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    (slides[slideIndex-1] as HTMLElement).style.display = "block";
+    dots[slideIndex-1].className += " active";
+    }
+</script>
+
+
+

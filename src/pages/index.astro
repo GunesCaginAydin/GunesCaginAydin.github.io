@@ -1,24 +1,100 @@
 ---
-const number = 1
+import BaseLayout from '../layouts/base-layout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Gunes</title>
-	</head>
-	<body>
-		<h1>Short Bio</h1>
-		<h1>Long Bio</h1>
-		<h1>Speaker</h1>
-		<h1>Posters & Publications</h1>
-		<h1>Research Interests</h1>
-		<h1>Contact</h1>
-		<h1>Lecture Notes</h1>
-		<h1>Un-asthetics</h1>
-		<a></a>
-	</body>
-</html>
+<BaseLayout title="Home Page">
+
+	<div class="home-page">
+		<div class="text">
+			<h5>I'm a <i>mechanical engineer</i> by trade who's currently invested in <i>computational neuroscience</i>. 
+				I did my Bachelors in METU (Ankara, Turkey) focusing on <i>system dynamics and control</i> where I
+				worked closely with <a href="">Erhan Ilhan Konukseven</a>. I then concluded my Masters in PoliMi (Milan, Italy) 
+				centered around <i>learning theory and dynamical identification</i> through the supervisions of
+				<a href="">Loris Roveda</a> and <a href="">Francesco Braghin</a>. Currently I'm working with <a href="">Antoni Guillamon</a> at UPC (Barcelona, 
+				Spain) on <i>single neuron dynamical identification</i>.
+			</h5>
+			<br/>
+			<p>
+				I am spending 2025/2026 with a few internships before starting my doctorate in 2026 Fall. Currently
+				in Barcelona, next stop Paris!
+			</p>
+			<p>
+				For a comprehensive exposition of my research check my <a href="/research">CV</a> or just
+				go to <a href="/research">Research</a> section. If you have any question or want to collaborate on neuroscience 
+				research <a href="mailto:gunescagin.aydin@mail.polimi.it">send me a mail</a>.
+			</p>
+		</div>
+
+		<div class="images">
+			<img src="src/assets/pper.jpg" alt="Moon sliding away from focus" class="pper" width="200%">
+		</div>
+	</div>
+
+	<div class="bottomslide">
+		<img src="src/assets/moon.jpg" alt="Moon sliding away from focus" class="moon">
+	</div>
+
+</BaseLayout>
+
+<style>
+	.home-page {
+		display: flex;
+		flex-direction: row;
+		margin: 0em 8em 2em 2em;
+		padding: 0em 0em 0em 0em;
+	}
+	.text {
+		text-align: left;
+		margin: 6em 3em 0em 0em;
+	}
+
+	.text a {
+		color: rgb(213, 21, 44);
+	}
+	.images {
+		display: flex;
+		flex-direction: column;
+		margin: 6em 2em 2em 2em;
+		padding: 0em 0em 0em 0em;
+		gap: 2em;
+	}
+	.bottomslide {
+		margin: 0em 10em 0em 2em;
+	}
+	.moon {
+		width: 100%;
+		height: 100px;
+		border-radius: 5px;
+		margin: 0em 0em 0em 0em;
+		object-fit: cover;
+	}
+	.pp {
+		max-width: 100%;
+		height: auto;
+		border-radius: 5cqi;
+		margin: 0em 0em 0em 0em;
+	}
+
+	@media screen and (max-width : 1000px) {
+		.home-page{
+			display: block;
+		}
+		.text {
+			text-align: center;
+		}
+		.images {
+
+		}
+		.moon {
+
+		}
+		.pp {
+			
+		}
+	}
+</style>
+
+
+
+
+
