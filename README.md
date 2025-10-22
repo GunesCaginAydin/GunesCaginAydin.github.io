@@ -1,1 +1,3 @@
-Mechanical engineer by trade who's currently invested in neurocomputational / cognitive modeling.
+Website html/css files, project built using astro.
+
+This is an ongoing project, for any questions and collaboration requests don't hesitate to contact!
