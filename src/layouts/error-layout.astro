@@ -8,6 +8,13 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 <html lang="en">
 	<head>
                 <BaseHead title={title} description={description} />
+                <style>
+                .info {
+                        display: flex;
+                        flex-direction: column;
+                        min-height: 100vh;
+                }
+                </style>
 	</head>
 	<body class="info">
                 <slot/>
@@ -15,9 +22,5 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 </html>
 
 <style>
-        .info {
-                display: flex;
-                flex-direction: column;
-                min-height: 100vh;
-        }
+
 </style>

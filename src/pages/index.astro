@@ -8,9 +8,9 @@ import BaseLayout from '../layouts/base-layout.astro';
 		<div class="text">
 			<h5>I'm a <i>mechanical engineer</i> by trade who's currently invested in <i>computational neuroscience</i>. 
 				I did my Bachelors in METU (Ankara, Turkey) focusing on <i>system dynamics and control</i> where I
-				worked closely with <a href="">Erhan Ilhan Konukseven</a>. I then concluded my Masters in PoliMi (Milan, Italy) 
+				worked closely with <a href="https://me.metu.edu.tr/tr/kisi/erhan-ilhan-konukseven">Erhan Ilhan Konukseven</a>. I then concluded my Masters in PoliMi (Milan, Italy) 
 				centered around <i>learning theory and dynamical identification</i> through the supervisions of
-				<a href="">Loris Roveda</a> and <a href="">Francesco Braghin</a>. Currently I'm working with <a href="">Antoni Guillamon</a> at UPC (Barcelona, 
+				<a href="https://www.supsi.ch/loris-roveda">Loris Roveda</a> and <a href="https://www.mecc.polimi.it/en/staff/francesco.braghin">Francesco Braghin</a>. Currently I'm working with <a href="https://web.mat.upc.edu/antoni.guillamon/">Antoni Guillamon</a> at UPC (Barcelona, 
 				Spain) on <i>single neuron dynamical identification</i>.
 			</h5>
 			<br/>
@@ -26,12 +26,12 @@ import BaseLayout from '../layouts/base-layout.astro';
 		</div>
 
 		<div class="images">
-			<img src='https://github.com/GunesCaginAydin/GunesCaginAydin.github.io/blob/main/src/assets/pper.jpg' alt="A photo of a photo of a reflection of you" class="pp" width="200%">
+			<img src='./src/assets/pper.jpg' alt="A photo of a photo of a reflection of you" class="pp">
 		</div>
 	</div>
 
 	<div class="bottomslide">
-		<img src='https://github.com/GunesCaginAydin/GunesCaginAydin.github.io/blob/main/src/assets/moon.jpg' alt="Moon sliding away from focus" class="moon">
+		<img src='./src/assets/moon.jpg' alt="Moon sliding away from focus" class="moon">
 	</div>
 
 </BaseLayout>
@@ -40,39 +40,45 @@ import BaseLayout from '../layouts/base-layout.astro';
 	.home-page {
 		display: flex;
 		flex-direction: row;
-		margin: 0em 8em 2em 2em;
+		margin: 0em 0em 0em 0em;
 		padding: 0em 0em 0em 0em;
 	}
 	.text {
-		text-align: left;
-		margin: 6em 3em 0em 0em;
+		text-align: right;
+		margin: 0em 3em 0em 0em;
+		padding: 0em 0em 0em 0em;
 	}
 
 	.text a {
-		color: rgb(213, 21, 44);
+		color: rgba(67, 36, 36, 0.76);
 	}
 	.images {
-		display: flex;
-		flex-direction: column;
-		margin: 6em 2em 2em 2em;
+		align-content: center;
+		justify-content: center;
+		margin: 0em 1em 0em 0em;
 		padding: 0em 0em 0em 0em;
-		gap: 2em;
 	}
 	.bottomslide {
-		margin: 0em 10em 0em 2em;
+		margin: 0em 1em 0em 1em;
+		padding: 0em 0em 0em 0em;
 	}
 	.moon {
-		width: 100%;
-		height: 100px;
+		width: 0%;
+		height: auto;
 		border-radius: 5px;
 		margin: 0em 0em 0em 0em;
+		padding: 0em 0em 0em 0em;
 		object-fit: cover;
+		opacity: 0.7;
 	}
 	.pp {
 		max-width: 100%;
 		height: auto;
 		border-radius: 5px;
 		margin: 0em 0em 0em 0em;
+		padding: 0em 0em 0em 0em;
+		object-fit: cover;
+		opacity: 1.0;
 	}
 
 	@media screen and (max-width : 1000px) {
@@ -81,9 +87,10 @@ import BaseLayout from '../layouts/base-layout.astro';
 		}
 		.text {
 			text-align: center;
+			margin: 2em;
 		}
 		.images {
-
+			margin: 3em;
 		}
 		.moon {
 

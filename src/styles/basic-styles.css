@@ -33,10 +33,10 @@ body {
 	line-height: 1.7;
 }
 main {
-	width: 1920px;
+	width: 1080px;
 	max-width: calc(100% - 2em);
 	margin: auto;
-	padding: 3em 1em;
+	padding: 2em 0em;
 }
 h1 {
 	font-family: "Roboto Slab","arial", "calibri", sans-serif;
@@ -60,7 +60,6 @@ h5 {
 }
 h6 {
 	font-family: "Roboto","arial", "calibri", sans-serif;
-	margin: 0 0 0.5rem 0;
 	color: rgb(var(--black));
 	line-height: 1.2;
 }
@@ -138,7 +137,7 @@ hr {
 	white-space: nowrap;
 }
 
-@media all and (max-width:1000px) {
+@media all and (max-width:720px) {
 	body {
 		font-size: 18px;
 	}

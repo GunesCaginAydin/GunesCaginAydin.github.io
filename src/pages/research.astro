@@ -4,11 +4,111 @@ import BaseLayout from '../layouts/base-layout.astro';
 
 <BaseLayout title="Research Page">
 
-    <div>
-        <p class:"research interests">
-            My current research interests are centered around the biological and
-            artificial representations of information flow in complex networks.
+    <div class="research-interests">
+        <h5>
+            My current research interests are centered around the <i>biological</i> and
+            <i>artificial</i> representations of information flow. Some fundamental questions
+            motivating my investigations are:
+
+            <ul class="motivation-list">
+                <li>How artificially intelligent behavior <i>can emerge</i> from biological intelligence</li>
+                <li>How to perceive <i>biological intelligence</i> from the point of <i>cortical networks</i></li>
+                <li>How to interpret <i>geometrical representations of cognition</i></li>
+            </ul>
+        </h5>
+        <p>
+            Most of these topics have long been explored but are certainly of great interest today, owing 
+            to advances in computational methods that reshaped the landscape of artificial intelligence. Taking
+            a step back from the capital-driven AI landscape and realizing the intriguing nature of intelligence
+            would point a different picture: one where intelligence and mathematics are forever embedded, where
+            philosophical discussions on mind and language can indeed be investigated on a cortical level and where,
+            quite possibly, our current ideas of intelligence are vastly distant from their biologically emergent
+            counterparts. 
+            
+            To bridge this gap it is essential to take neurocomputations on a biological level as guidance and investigate
+            cortical networks and cognitive functions. If emergence of intelligence can be accurately modeled it is 
+            obvious many astounding discoveries on psychology, language and cognition will be made possible.
         </p>
+        <p>
+            The driving force of this discovery can only be, against all the interests of corporations and governments, to
+            discover scientific links to intelligence and motivate the creativity of humankind.
+        </p>
+        <br>
+        <p>
+            As a brief sidenote, I am also concurrently working in more robotics-based applications of AI, specifically
+            on metalearnable dynamical identification. Even though this is secondary to my neuroscientific interests
+            I would be happy to discuss anything related to it.
+        </p>
+        <br>
+        <h5>
+            You can find a sample of my <i>past</i> and <i>current</i> research below.
+            <div class="projects">
+                <div class="p1">
+                    <img src="" alt="x" class="p1-image">
+                    Forward and Inverse Coherence Estimation in Single Neuron Models
+                </div>
+                <div class="p2">
+                    <img src="" alt="x" class="p2-image">
+                    In-Context Dynamical Learning: A Comparison Between Different Neural Architectures
+                </div>
+                <div class="p3">
+                    <img src="" alt="x" class="p3-image">
+                    A MATLAB Based Comparison Between Path Planning Algorithms
+                </div>
+            </div>
+        </h5>
+
     </div>
     
 </BaseLayout>
+
+<style>
+    .research-interests {
+        text-align: left;
+    }
+    .motivation-list {
+        margin: 0em;
+        
+    }
+
+    .motivation-list li {
+        margin: 20px 0;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .p1 {
+        display: flex;
+    }
+    .p1-image {
+        height: 100px;
+        width: 100px;
+    }
+
+    .p2 {
+        display: flex;
+    }
+    .p2-image {
+        height: 100px;
+        width: 100px;
+    }
+
+    .p3 {
+        display: flex;
+    }
+    .p3-image {
+        height: 100px;
+        width: 100px;
+    }
+
+	@media screen and (max-width : 1000px) {
+		.research-interests{
+			display: block;
+			text-align: left;
+			margin: 3em;
+		}
+    }
+</style>
