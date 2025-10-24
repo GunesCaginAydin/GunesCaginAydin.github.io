@@ -2,70 +2,111 @@
 import BaseLayout from '../layouts/base-layout.astro';
 ---
 
-<BaseLayout title="Research Page">
+<BaseLayout title="Research Page" class="research-interests">
+    <div class="research-container">
+        
+        <img src="src/assets/moon.jpg" class="moon-inverted" alt="moon inverted and sliding into oblivion which is out hearts">
 
-    <div class="research-interests">
-        <h5>
-            My current research interests are centered around the <i>biological</i> and
-            <i>artificial</i> representations of information flow. Some fundamental questions
-            motivating my investigations are:
+        <div class="intro">
+            <h5>
+                My current research interests are centered around the <i>biological</i> and
+                <i>artificial</i> representations of information flow. Some fundamental questions
+                motivating my investigations are:
 
-            <ul class="motivation-list">
-                <li>How artificially intelligent behavior <i>can emerge</i> from biological intelligence</li>
-                <li>How to perceive <i>biological intelligence</i> from the point of <i>cortical networks</i></li>
-                <li>How to interpret <i>geometrical representations of cognition</i></li>
-            </ul>
-        </h5>
-        <p>
-            Most of these topics have long been explored but are certainly of great interest today, owing 
-            to advances in computational methods that reshaped the landscape of artificial intelligence. Taking
-            a step back from the capital-driven AI landscape and realizing the intriguing nature of intelligence
-            would point a different picture: one where intelligence and mathematics are forever embedded, where
-            philosophical discussions on mind and language can indeed be investigated on a cortical level and where,
-            quite possibly, our current ideas of intelligence are vastly distant from their biologically emergent
-            counterparts. 
-            
-            To bridge this gap it is essential to take neurocomputations on a biological level as guidance and investigate
-            cortical networks and cognitive functions. If emergence of intelligence can be accurately modeled it is 
-            obvious many astounding discoveries on psychology, language and cognition will be made possible.
-        </p>
-        <p>
-            The driving force of this discovery can only be, against all the interests of corporations and governments, to
-            discover scientific links to intelligence and motivate the creativity of humankind.
-        </p>
-        <br>
-        <p>
-            As a brief sidenote, I am also concurrently working in more robotics-based applications of AI, specifically
-            on metalearnable dynamical identification. Even though this is secondary to my neuroscientific interests
-            I would be happy to discuss anything related to it.
-        </p>
-        <br>
-        <h5>
-            You can find a sample of my <i>past</i> and <i>current</i> research below.
-            <div class="projects">
-                <div class="p1">
-                    <img src="" alt="x" class="p1-image">
-                    Forward and Inverse Coherence Estimation in Single Neuron Models
-                </div>
-                <div class="p2">
-                    <img src="" alt="x" class="p2-image">
-                    In-Context Dynamical Learning: A Comparison Between Different Neural Architectures
-                </div>
-                <div class="p3">
-                    <img src="" alt="x" class="p3-image">
-                    A MATLAB Based Comparison Between Path Planning Algorithms
-                </div>
-            </div>
-        </h5>
-
+                <ul class="motivation-list">
+                    <li>How artificially intelligent behavior <i>can emerge</i> from biological intelligence</li>
+                    <li>How to perceive <i>biological intelligence</i> from the point of <i>cortical networks</i></li>
+                    <li>How to interpret <i>geometrical representations of cognition</i></li>
+                </ul>
+            </h5>
+            <p>
+                Most of these topics have long been explored but are certainly of great interest today, owing 
+                to advances in computational methods that reshaped the landscape of artificial intelligence. Taking
+                a step back from the capital-driven AI landscape and realizing the intriguing nature of intelligence
+                would point a different picture: one where intelligence and mathematics are forever embedded, where
+                philosophical discussions on mind and language can indeed be investigated on a cortical level and where,
+                quite possibly, our current ideas of intelligence are vastly distant from their biologically emergent
+                counterparts. 
+                
+                To bridge this gap it is essential to take neurocomputations on a biological level as guidance and investigate
+                cortical networks and cognitive functions. If emergence of intelligence can be accurately modeled it is 
+                obvious many astounding discoveries on psychology, language and cognition will be made possible.
+            </p>
+            <p>
+                The driving force of this discovery can only be, against all the interests of corporations and governments, to
+                discover scientific links to intelligence and motivate the creativity of humankind.
+            </p>
+            <p class="moon-text">
+                •
+            </p>
+            <p>
+                As a brief sidenote, I am also concurrently working in more robotics-based applications of AI, specifically
+                on metalearnable dynamical identification. Even though this is secondary to my neuroscientific interests
+                I would be happy to discuss anything related to it.
+            </p>
+            <br>
+        </div>
     </div>
-    
+        <div class="three-points">
+                <h5>
+                You can find 3 of my <i>past</i> and/or <i>current</i> research below.
+                </h5>
+                <div class="projects">
+                    <div class="p1">
+                        <img src="src/assets/neuron1.jpg" alt="neural networks and meta learning representative" class="p1-image">
+                        <div>
+                        <h5>
+                            Forward and Inverse Coherence Estimation in Single Neuron Models:
+                        </h5>
+                        <br>
+                        <p> 
+                            This is dasdda asd a dasd adas dasd 
+                        </p>
+                        </div>
+                    </div>
+                    <div class="p2">
+                        <img src="src/assets/neuron2.jpg" alt="neural networks and meta learning representative" class="p2-image">
+                        <div>
+                        <h5>
+                            Forward and Inverse Coherence Estimation in Single Neuron Models:
+                        </h5>
+                        <br>
+                        <p> 
+                            This is dasdda asd a dasd adas dasd 
+                        </p>
+                        </div>
+                    </div>
+                    <div class="p3">
+                        <img src="src/assets/neuron3.jpg" alt="neural networks and meta learning representative" class="p3-image">
+                        <div>
+                        <h5>
+                            Forward and Inverse Coherence Estimation in Single Neuron Models:
+                        </h5>
+                        <br>
+                        <p> 
+                            This is dasdda asd a dasd adas dasd 
+                        </p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
 </BaseLayout>
 
 <style>
-    .research-interests {
-        text-align: left;
+    .research-container{
+        display: flex;
+        flex-direction: row;
     }
+
+    .moon-inverted {
+        width: 300px;
+        height: 860px;
+        rotate: 0deg;
+        object-fit: cover;
+        margin: 0em 4em;
+    }
+
     .motivation-list {
         margin: 0em;
         
@@ -75,33 +116,53 @@ import BaseLayout from '../layouts/base-layout.astro';
         margin: 20px 0;
     }
 
+    .moon-text {
+        text-align: center;
+        color: black;
+    }
+
+    .three-points {
+        text-align: center;
+        margin: 1em 8em;
+    }
+
     .projects {
         display: flex;
         flex-direction: column;
+        margin: 2em 0em;
     }
 
     .p1 {
         display: flex;
+        text-align: left;
+        margin: 1em 0em;
     }
     .p1-image {
         height: 100px;
         width: 100px;
+        margin: 0em 1em;
     }
 
     .p2 {
         display: flex;
+        text-align: left;
+        margin: 1em 0em;
     }
     .p2-image {
         height: 100px;
         width: 100px;
+        margin: 0em 1em;
     }
 
     .p3 {
         display: flex;
+        text-align: left;
+        margin: 1em 0em;
     }
     .p3-image {
         height: 100px;
         width: 100px;
+        margin: 0em 1em;
     }
 
 	@media screen and (max-width : 1000px) {
@@ -110,5 +171,13 @@ import BaseLayout from '../layouts/base-layout.astro';
 			text-align: left;
 			margin: 3em;
 		}
+
+        .moon-inverted {
+        width: 300px;
+        height: 1350px;
+        rotate: 0deg;
+        object-fit: cover;
+        margin: 0em 4em;
+    }
     }
 </style>
