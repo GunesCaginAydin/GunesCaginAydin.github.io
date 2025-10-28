@@ -4,7 +4,7 @@ import BaseLayout from '../layouts/base-layout.astro';
         
 
 <BaseLayout title="Manifesto Page">
-	<div class="manifesto-container">
+	<div class="manifesto-page">
 
         <h5 class="manifesto">
             Unlike unlike unlike...
@@ -23,23 +23,36 @@ import BaseLayout from '../layouts/base-layout.astro';
             Cool is nostalgia broken, mind split, spirit shattered.
             <br>
         </h5>
-
-        <img src="/neuron3.JPG" class="img">
-
+    
     </div>
 
 </BaseLayout>
 
 <style>
-    .manifesto-container {
-        display: flex;
+    .manifesto-page {
+        width: 1080px;
+        display: block;
+        justify-items: center;
+        align-items: center;
     }
     .img {
-        width: 700px;
-        height: auto;
-        margin: 0em 2em;
+        width: 500px;
+        object-fit: contain;
+        margin: 2em 2em;
     }
     .manifesto {
-        text-align: right;
+        text-align: center;
+    }
+
+	@media all and (max-width : 1080px) {
+		.manifesto-page{
+            width: 100vw;
+			display: flex;
+            flex-direction: column;
+			text-align: center;
+            align-items: center;
+            justify-content: center;
+			padding: 0em 6em 0em 4em;
+		}
     }
 </style>
